@@ -1,0 +1,57 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: radial-gradient(circle farthest-corner at 106% 32%, #A9F1DF, #FFBBBB);
+}
+
+/* 피아노 컨테이너 */
+.piano-container{
+    padding: 40px;
+    border-radius: 15px;
+    background: white;
+    box-shadow: 0 0 20px white;
+}
+
+/* 피아노 키 */
+.piano-keys {
+    display: flex;
+    list-style: none;
+    margin-top: 40px;
+}
+
+.piano-keys .key {
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+}
+
+.piano-keys .black {
+    z-index: 2;
+    width: 45px;
+    height: 140px;
+    margin: 0px -22px;
+    border-radius: 0 0 5px 5px;
+    background: linear-gradient(#333, #000);
+}
+
+.piano-keys .white {
+    height: 250px;
+    width: 70px;
+    border-radius: 8px;
+    border: 1px solid #000;
+    background: linear-gradient(#fff 95%, #eee 5%);
+}
+
+.piano-keys .key span {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    color: rgba(150, 150, 150, 0.8);
+    font-size: 20px;
+    text-align: center;
+}
+  
+  
+ 
